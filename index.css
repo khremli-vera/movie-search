@@ -1,0 +1,173 @@
+header,
+footer {
+    height: 100px;
+    background-color: #373B6A;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    position: relative;
+}
+
+input {
+    background-color: #373B6A;
+    border: 2px solid #9ba0d8;
+    color: white;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+    padding: 15px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+}
+
+span {
+    position:absolute;
+    right:10px;
+    top:0;
+    bottom:0;
+    height:20px;
+    margin:auto;
+    cursor:pointer;
+    color: white;
+}
+
+main {
+    background-color: #21254B;
+    text-align: center;
+    padding: 40px;
+    height: calc(100vh - 280px);
+}
+
+.movieCardsContainer {
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.movieCard {
+    width: 25%;
+    background-color: #373B6A;
+    display: flex;
+    flex-direction: column;
+}
+
+.movieTitle {
+    min-height: 100px;
+    background-color: #373B6A;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.movieCard h2 {
+    font-family: 'Arial', sans-serif;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.movieCard img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 500px;
+    align-self: flex-end;
+    
+}
+
+footer {
+    
+    display: flex;
+    padding-left: 135px;
+    padding-right: 135px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer img {
+    width: 135px;
+    height: 50px;
+}
+
+footer img:hover {
+    filter: brightness(88%) ;
+}
+
+a:hover {
+    filter: brightness(88%) ;
+}
+
+a {
+transition: 1s;
+color: white;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+@media (max-width: 1440px){
+    .movieCard {
+        width: 30%;
+    }
+
+ 
+
+    .movieTitle {
+        height: 60px
+    }
+}
+
+@media (max-width: 1079px){
+       main {
+        height: auto;
+    }
+
+    .movieCardsContainer {
+        align-items: flex-start;
+    }
+
+    .movieCard {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .movieCard {
+        width: 100%;
+    }
+     input {
+        padding: 15px;
+        width:320px;
+     }
+
+     footer {
+        padding-left: 20px;
+    padding-right: 20px;
+     }
+}
