@@ -1,4 +1,4 @@
-let url = "https://api.themoviedb.org/3/search/movie?api_key=b0cfd3f7d980e6bb6eb89b3f81cfa722&query=love";
+let url = "https://api.themoviedb.org/3/search/movie?api_key=b0cfd3f7d980e6bb6eb89b3f81cfa722&query=winter";
 
 let cards = document.querySelectorAll('.movieCard')
 
