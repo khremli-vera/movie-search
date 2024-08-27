@@ -16,8 +16,11 @@ header {
     align-items: center;
 }
 
+
+
 form {
     position: relative;
+    
 }
 
 input {
@@ -31,10 +34,30 @@ input {
     border-radius: 10px;
 }
 
-input::placeholder {
+input::placeholder,
+header p {
     color: white;
     font-size: 17px;
     font-family: 'Arial', sans-serif;
+}
+
+header p {
+    margin-right: 40px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: 130px;
+    }
+
+    form {
+        margin-top: 0;
+    }
+
+    header p {
+        margin-right: 0;
+    }
 }
 
 span {
